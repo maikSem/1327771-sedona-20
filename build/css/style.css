@@ -1,0 +1,24 @@
+.page {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1280px;
+  font-family: "PT Sans", "Arial" sans-serif; }
+
+/*COLOR*/
+.nav__list {
+  margin: 0;
+  padding: 0;
+  background-color: #81B3D2;
+  list-style: none; }
+
+.nav__item {
+  text-align: center; }
+
+.nav__link {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none; }

@@ -2,3 +2,16 @@
   font-size: $size;
   line-height: $height;
 }
+
+@mixin photo-autor {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@mixin title($size, $height, $align, $transform, $color) {
+  font-size: $size;
+  line-height: $height;
+  text-align: $align;
+  text-transform: $transform;
+  color: $color;
+}

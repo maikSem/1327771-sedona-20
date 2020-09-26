@@ -1,0 +1,55 @@
+.advantage {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage--blue {
+  background-color: $basic-blue;
+  color: $basic-white;
+}
+
+.advantage--grey {
+  background-color: $basic-grey;
+  color: $light_black;
+}
+
+.advantage__top {
+  text-align: center;
+}
+
+.advantage__title {
+  @include text-size(18px, 26px);
+
+  &--black {
+    color: $basic-black;
+  }
+}
+
+.advantage__number {
+  @include text-size(14px, 21px);
+}
+
+.advantage__text {
+  @include text-size(14px, 21px);
+}
+
+.advantage__features-list {
+  margin: 0;
+  padding: 0;
+  background-color: $basic-white;
+  list-style: none;
+}
+
+.advantage__features-title {
+  @include text-size(18px, 26px);
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    @include text-size(21px, 26px);
+  }
+}
+
+.advantage__features-text {
+  @include text-size(14px, 21px);
+  color: $light_black;
+}

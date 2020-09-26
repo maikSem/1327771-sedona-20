@@ -1,16 +1,16 @@
-.search {
+.video__title {
+  @include text-size(18px, 26px);
   text-align: center;
-}
-
-.search__title {
-  @include text-size(21px, 26px);
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     @include text-size(30px, 26px);
   }
 }
 
-.search__text {
+.video__text {
   @include text-size(14px, 24px);
+  text-align: center;
+  text-transform: uppercase;
   color: $light_black;
 }

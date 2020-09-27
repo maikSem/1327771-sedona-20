@@ -9,3 +9,44 @@
 .form__top-text {
   @include title(14px, 24px, center, uppercase, $light_black);
 }
+
+.form__title {
+  @include title(18px, 26px, center, uppercase, $basic-black);
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__caption {
+  @include title(14px, 26px, left, uppercase, $light_black);
+}
+
+.form__caption--radio,
+.form__caption--checkbox {
+  @include title(18px, 26px, left, none, $basic-black);
+  font-weight: bold;
+}
+
+.form__input {
+  padding: 18px 22px 14px 22px;
+  background-color: $grey-placeholder;
+  border: none;
+
+  &::placeholder {
+    @include title(18px, 26px, left, none, $basic-black);
+    font-weight: bold;
+  }
+}
+
+.form__textarea {
+  @include title(18px, 26px, left, none, $basic-black);
+  font-weight: bold;
+  background-color: $grey-placeholder;
+}

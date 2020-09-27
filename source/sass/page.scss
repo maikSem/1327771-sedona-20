@@ -1,0 +1,18 @@
+.page {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1280px;
+  font-family: "PT Sans", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1280px;
+  }
+}
+
+.page__main-index {
+  text-transform: uppercase;
+}

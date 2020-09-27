@@ -5,21 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page">
   <header class="page__header">
     <nav class="nav page__nav">
-      <div class="nav__wrapper-logo">
-        <img class="nav__logo" src="#" alt="№">
+      <div class="nav__wrapper-list">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Фото и видео</a></li>
+          <li class="nav__item"><a class="nav__link" href="form.html">Форма отзыва</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">HTML Academy</a></li>
+        </ul>
+        <button class="nav__button nav__button--close" type="button" aria-label="Закрыть меню">
+          <svg class="nav__svg nav__svg--close" width="22" height="22" fill="white">
+            <use xlink:href="img/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
       </div>
-      <button class="nav__button" type="button" aria-label="Закрыть меню"></button>
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Фото и видео</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Форма отзыва</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">HTML Academy</a></li>
-      </ul>
+      <div class="nav__wrapper-logo">
+        <source media="(min-width: 1280px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img class="nav__logo" src="img/logo-sedona-mobile.svg" width="102" height="84"
+          alt="Седона-город для туристов!">
+        <button class="nav__button nav__button--open" type="button" aria-label="Открыть меню меню">
+          <svg class="nav__svg nav__svg--open" width="22" height="22" fill="#81B3D2">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
     </nav>
   </header>
   <main class="page__main">
@@ -29,7 +44,7 @@
     </section>
     <section class="photo">
       <h2 class="photo__title">Фото и видео</h2>
-      <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
+      <p class="photo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
         экономике.
       </p>
       <ul class="photo__list">
@@ -37,7 +52,7 @@
           <figure class="photo__wrapper">
             <img class="photo__img" src="#" alt="#">
             <figcaption class="photo__caption">
-              <h3 class="photo__title">Неродные просторы</h3>
+              <h3 class="photo__title-item">Неродные просторы</h3>
               <span class="photo__author">Автор фото: Борис</span>
               <span class="photo__count">13350</span>
             </figcaption>
@@ -47,7 +62,7 @@
           <figure class="photo__wrapper">
             <img class="photo__img" src="#" alt="#">
             <figcaption class="photo__caption">
-              <h3 class="photo__title">Местная растительность</h3>
+              <h3 class="photo__title-item">Местная растительность</h3>
               <span class="photo__author">Автор фото: Сергей</span>
               <span class="photo__count">143</span>
             </figcaption>
@@ -57,7 +72,7 @@
           <figure class="photo__wrapper">
             <img class="photo__img" src="#" alt="#">
             <figcaption class="photo__caption">
-              <h3 class="photo__title">Мост дьявола</h3>
+              <h3 class="photo__title-item">Мост дьявола</h3>
               <span class="photo__author">Автор фото: Антон</span>
               <span class="photo__count">254</span>
             </figcaption>
@@ -67,7 +82,7 @@
           <figure class="photo__wrapper">
             <img class="photo__img" src="#" alt="#">
             <figcaption class="photo__caption">
-              <h3 class="photo__title">Дорога на север</h3>
+              <h3 class="photo__title-item">Дорога на север</h3>
               <span class="photo__author">Автор фото: Петр</span>
               <span class="photo__count">96</span>
             </figcaption>

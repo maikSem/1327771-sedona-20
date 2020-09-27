@@ -1,0 +1,50 @@
+.photo__title {
+  @include text-size(18px, 26px);
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include text-size(30px, 26px);
+  }
+}
+
+.photo__text {
+  @include photo-autor;
+  text-align: center;
+  text-transform: uppercase;
+  color: $light_black;
+}
+
+.photo__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photo__title-item {
+  @include photo-autor;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-white;
+  }
+}
+
+.photo__author {
+  @include photo-autor;
+  color: $light_black;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-white;
+  }
+}
+
+.photo__count {
+  font-weight: bold;
+
+  @include photo-autor;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-white;
+  }
+}

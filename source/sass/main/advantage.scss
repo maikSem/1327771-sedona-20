@@ -13,8 +13,31 @@
   color: $light_black;
 }
 
+.advantage--big {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 33% 67%;
+    width: auto;
+  }
+}
+
+.advantage--smal {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    width: 33.3%;
+  }
+}
+
+.advantage--right {
+  grid-template-columns: 67% 33%;
+}
+
 .advantage__top {
   text-align: center;
+}
+
+.advantage__top--right {
+  grid-column: 2 / 3;
 }
 
 .advantage__title {
@@ -33,11 +56,25 @@
   @include text-size(14px, 21px);
 }
 
+.advantage__wrapper {
+  background-color: green;
+}
+
+.advantage__wrapper--left {
+  grid-row: 1 / 2;
+}
+
 .advantage__features-list {
   margin: 0;
   padding: 0;
   background-color: $basic-white;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-column: 1 / 3;
+  }
 }
 
 .advantage__features-title {

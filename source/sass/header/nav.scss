@@ -5,6 +5,10 @@
 .nav__wrapper-logo {
   position: relative;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    top: -30px;
+  }
 }
 
 .nav__list {
@@ -14,6 +18,7 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     background-color: $basic-white;
   }
 }
@@ -24,6 +29,11 @@
 
   &:last-child {
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 20%;
+    box-shadow: none;
   }
 }
 

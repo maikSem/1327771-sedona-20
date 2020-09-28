@@ -1,0 +1,12 @@
+.social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-item {
+  width: 46px;
+  height: 48px;
+  background-color: $basic-blue;
+}

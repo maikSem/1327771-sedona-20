@@ -14,3 +14,10 @@
   @include text-size(14px, 24px);
   color: $light_black;
 }
+
+.search__button {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 458px;
+  }
+}

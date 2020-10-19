@@ -1,3 +1,43 @@
+.form__main {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+.form__section--name {
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+  }
+}
+
+.form__section--contacts {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+}
+
+.form__section--impression {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.form__section--places {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.form__section--message {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+}
+
 .form__top-title {
   @include title(18px, 24px, center, uppercase, $basic-black);
 
@@ -22,6 +62,25 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.form__list--contacts {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__list--places {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__caption {

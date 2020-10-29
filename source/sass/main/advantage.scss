@@ -56,8 +56,13 @@
   @include text-size(14px, 21px);
 }
 
-.advantage__wrapper {
-  background-color: green;
+// .advantage__wrapper {
+//   height: 260px;
+// }
+
+.advantage__img {
+  width: 100%;
+  max-width: 100%;
 }
 
 .advantage__wrapper--left {

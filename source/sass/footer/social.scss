@@ -1,11 +1,16 @@
 .social {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
+  width: 151px;
   list-style: none;
 }
 
 .social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background-color: $basic-blue;

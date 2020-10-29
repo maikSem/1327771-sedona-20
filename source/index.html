@@ -41,7 +41,7 @@
   <main class="page__main page__main-index">
     <section class="top">
       <h1 class="top__title visually-hidden">Самое лучшее место для отдыха на всей планете Земля!</h1>
-      <img class="top__img" src="img/text-sedona-index.svg" alt="#">
+      <img class="top__img" src="img/text-sedona-index.svg" width="282" height="214" alt="#">
     </section>
     <section class="advantages">
       <div class="advantages__top">
@@ -55,7 +55,19 @@
               <p class="advantage__text">Седона не атракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantage__wrapper">
-              <img class="advantage__img" src="#" alt="#">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1280px)"
+                  srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x"> -->
+                <source media="(min-width: 1440px)"
+                  srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                <img class="advantage__img" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x"
+                  alt="Красивый двухэтажный зеленый дом">
+              </picture>
             </div>
             <ul class="advantage__features-list">
               <li class="advantage__features-item">
@@ -79,7 +91,19 @@
               <p class="advantage__text">Да! По нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="advantage__wrapper advantage__wrapper--left">
-              <img class="advantage__img" src="#" alt="#">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1280px)"
+                  srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x"> -->
+                <source media="(min-width: 1440px)"
+                  srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-bridge-tablet@1x.jpg 1x, img//photo-bridge-tablet@2x.jpg 2x">
+                <img class="advantage__img" src="img/photo-bridge-mobile@1x.jpg"
+                  srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Каньон">
+              </picture>
             </div>
           </li>
           <li class="advantage advantage--grey advantage--smal advantages__item">
@@ -109,7 +133,16 @@
     <section class="map">
       <h2 class="map__title visually-hidden">Как нас найти?</h2>
       <div class="map__wrapper">
-        <img class="map__img" src="#" alt="#">
+        <picture>
+          <!-- <source type="image/webp" media="(min-width: 1280px)"
+            srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x"> -->
+          <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img//bg-map-tablet@2x.jpg 2x">
+          <img class="map__img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Каньон">
+        </picture>
       </div>
     </section>
   </main>
@@ -118,24 +151,32 @@
     <ul class="social footer__social">
       <li class="social-item">
         <a class="social-link social-link--twitter" href="#">
-          <img class="social-img social-img--twitter" src="#" alt="Мы в Twitter">
+          <svg class="social-img social-img--twitter" width="17" height="15" fill="white" title="Мы в Twitter">
+            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+          </svg>
         </a>
       </li>
       <li class="social-item">
         <a class="social-link social-link--facebook" href="#">
-          <img class="social-img social-img--facebook" src="#" alt="Мы в Facebook">
+          <svg class="social-img social-img--facebook" width="9" height="19" fill="white" title="Мы в Facebook">
+            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+          </svg>
         </a>
       </li>
       <li class="social-item">
         <a class="social-link social-link--youtube" href="#">
-          <img class="social-img social-img--youtube" src="#" alt="Канал на Youtube">
+          <svg class="social-img social-img--youtube" width="20" height="14" fill="white" title="Канал на Youtube">
+            <use xlink:href="img/sprite.svg#icon-youtube"></use>
+          </svg>
         </a>
       </li>
     </ul>
     <div class="copyright footer__copyright">
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="#">
-        <img class="copyright__img" src="#" alt="HTML Academy">
+        <svg class="copyright__img" width="27" height="34" fill="black" title="HTML Academy">
+          <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </footer>

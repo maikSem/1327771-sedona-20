@@ -1,8 +1,11 @@
 .search {
+  padding: 33px 20px 49px;
   text-align: center;
 }
 
 .search__title {
+  margin: 0 0 20px 0;
+
   @include text-size(21px, 26px);
 
   @media (min-width: $tablet-width) {
@@ -11,11 +14,15 @@
 }
 
 .search__text {
+  margin: 0 0 27px 0;
+
   @include text-size(14px, 24px);
   color: $light_black;
 }
 
 .search__button {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     width: 458px;

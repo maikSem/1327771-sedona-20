@@ -1,4 +1,20 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.advantages__top {
+  margin-top: 33px;
+}
+
 .advantages__slogan {
+  margin: 0 0 32px 0;
+  padding: 0 30px;
+
   @include text-size(18px, 26px);
   font-weight: 700;
   text-align: center;
@@ -9,6 +25,9 @@
 }
 
 .advantages__title {
+  margin: 0 0 10px 0;
+  padding: 0 30px;
+
   @include text-size(14px, 26px);
   font-weight: normal;
   text-align: center;

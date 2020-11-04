@@ -1,7 +1,10 @@
 .copyright {
   display: flex;
+  align-items: center;
 }
 
 .copyright__text {
+  margin: 0 15px 0 0;
+
   @include title(14px, 26px, none, uppercase, $basic-black);
 }

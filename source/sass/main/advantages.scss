@@ -9,6 +9,10 @@
 
 .advantages__top {
   margin-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 43.5px;
+  }
 }
 
 .advantages__slogan {
@@ -20,6 +24,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding: 0 80px;
+
     @include text-size(21px, 26px);
   }
 }
@@ -32,6 +38,10 @@
   font-weight: normal;
   text-align: center;
   color: $light_black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 52.5px 0;
+  }
 }
 
 .advantages__list {

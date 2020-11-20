@@ -21,7 +21,25 @@
 }
 
 .search__button {
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: $blue-active;
+  }
+
+  &:disabled {
+    background-color: $grey-disabled;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
